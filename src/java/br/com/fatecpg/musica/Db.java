@@ -17,12 +17,12 @@ public class Db {
             return dados;
     }
     //metodo para inserir contato
-    public static void  addDados(Dados dados){
-        dados.add(dados);
+    public static void  addDados(Dados dado){
+        dados.add(dado);
     }
     //metodo para alterar contato
-    public static void updateDados(int index, Dados dados){
-        dados.set(index, dados);
+    public static void updateDados(int index, Dados dado){
+        dados.set(index, dado);
     }
     //metodo para remover contato
     public static void remove(int index){
