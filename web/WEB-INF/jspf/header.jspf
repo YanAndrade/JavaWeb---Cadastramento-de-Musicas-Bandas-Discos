@@ -1,0 +1,8 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<nav class="nav nav-pills nav-fill" style="background-color: #2f3542">
+  <a class="nav-item nav-link" href="home.jsp"><h3 style="color:#F8F8FF; font-size: 25px">Home</h3></a>
+  <a class="nav-item nav-link" href="index.jsp"><h3 style="color:#F8F8FF">Lista</h3></a>
+  <hr/>
+</nav>!</h2>

@@ -14,29 +14,37 @@
         <title>Índice - WebContatos</title>
     </head>
     <body>
-        <h1>WebContatos</h1>
-        <h2>Índice</h2>
-        <h3><a href="incluir.jsp">Adicionar Contato </a></h3>
-        <table border="1">
-            <tr>
-                <th>Índice</th>
-                <th>Nome</th>
-                <th>E-mail</th>
-                <th>Telefone</th>
-                <th>Comandos</th>
-            </tr>
-            <%for(Dados c: Db.getDados()){%>
-            <tr>
-                <td><%= Db.getDados().indexOf(c)%></td>
-                <td><%= c.getMusica()%></td>
-                <td><%= c.getBanda()%></td>
-                <td><%= c.getDisco()%></td>
-                <td>
-                    <a href="alterar.jsp?index=<%=Db.getDados().indexOf(c) %>">Alterar</a>
-                    <a href="excluir.jsp?index=<%=Db.getDados().indexOf(c) %>">Excluir</a>
-                </td>
-            </tr>
-            <%}%>
-        </table>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <div style="text-align: center">
+            
+            <h1>Índice</h1>
+            <h3><a href="incluir.jsp">Adicionar</a></h3>
+            
+            <center>
+            <table width="700" style="text-align: center">
+                <tr>
+                    <th>Índice</th>
+                    <th>Musica</th>
+                    <th>Banda</th>
+                    <th>Disco</th>
+                    <th>Comandos</th>
+                </tr>
+                <%for (Dados c : Db.getDados()) {%>
+                <tr>
+                    <td><%= Db.getDados().indexOf(c)%></td>
+                    <td><%= c.getMusica()%></td>
+                    <td><%= c.getBanda()%></td>
+                    <td><%= c.getDisco()%></td>
+                    <td>
+                        <a href="alterar.jsp?index=<%=Db.getDados().indexOf(c)%>">Alterar</a>
+                        <a href="excluir.jsp?index=<%=Db.getDados().indexOf(c)%>">Excluir</a>
+                    </td>
+                </tr>
+                <%}%>
+            </table>
+            </center>
+            <br/>
+        </div>
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
