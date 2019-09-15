@@ -29,6 +29,7 @@
         <title>Incluir WebContatos</title>
     </head>
     <body>
+        <%@include file="/WEB-INF/home.jspf"%>
         <h1>WebContatos</h1>
         <h2>Novo Contato</h2>
         <form>
