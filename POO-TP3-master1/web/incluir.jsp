@@ -29,7 +29,7 @@
         <title>Incluir WebContatos</title>
     </head>
     <body>
-        <%@include file="/WEB-INF/home.jspf"%>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
         <h1>WebContatos</h1>
         <h2>Novo Contato</h2>
         <form>
@@ -43,5 +43,6 @@
             <input type="submit" name="add" value="Adicionar"/>
             <input type="submit" name="cancel" value="Cancelar"/>
         </form>
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
