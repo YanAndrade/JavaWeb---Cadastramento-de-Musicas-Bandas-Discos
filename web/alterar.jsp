@@ -25,17 +25,19 @@
 %>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Alterar Web-Contatos</title>
+        <title>Alterar</title>
     </head>
     <body>
-        <h1>WebContatos</h1>
-        <h2>Alterar Contato</h2>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <center>
+        <h2>Alterar</h2>
          <form>
             Índice:<br/>
             <%= request.getParameter("index")%></br>
             <input type="hidden" name="index"
-                   value="<%=request.getParameter("index")%>"/>
+                   value="<%=request.getParameter("index")%>"/> <br/>
             Musica:<br/>
             <input type="text" name="musica"
                    value="<%=dados.getMusica()%>"/><br/>
@@ -46,8 +48,10 @@
             <input type="text" name="disco"
                    value="<%=dados.getDisco()%>"/><br/><br/>
             
-            <input type="submit" name="set" value="Alterar"/>
-            <input type="submit" name="cancel" value="Cancelar"/>
+            <input type="submit" class="botão" name="set" value="Alterar"/>
+            <input type="submit" class="botão" name="cancel" value="Cancelar"/>
         </form>
+       </center>
+       <%@include file="WEB-INF/jspf/footer.jspf"%>            
     </body>
 </html>

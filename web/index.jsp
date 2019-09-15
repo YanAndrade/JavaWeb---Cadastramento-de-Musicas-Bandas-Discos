@@ -11,13 +11,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Índice - WebContatos</title>
+        <title>Índice</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <div style="text-align: center">
             
-            <h1>Índice</h1>
+            <h2>Índice</h2>
             <h3><a href="incluir.jsp">Adicionar</a></h3>
             
             <center>

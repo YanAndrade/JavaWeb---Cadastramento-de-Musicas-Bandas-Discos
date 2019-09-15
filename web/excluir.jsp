@@ -24,17 +24,22 @@
 %>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Excluir - WebBandas</title>
+        <title>Excluir</title
+        
     </head>
     <body>
-        <h1>Bandas</h1>
-        <h2>Excluir Bandas</h2>
+        <%@include file="WEB-INF/jspf/menu.jspf"%>
+        <center>
+        <h2>Excluir</h2>
         <form>
             Indice<br/><b><%= request.getParameter("index") %></b><br/>
-            <input type="hidden" name="index" value="<%= request.getParameter("index") %>"/>
-            <input type="submit" name="remove" value="Excluir"/>
-            <input type="submit" name="cancel" value="Cancelar"/>
+            <input type="hidden" name="index" value="<%= request.getParameter("index") %>"/> <br/>
+            <input type="submit" class="botão" name="remove" value="Excluir"/>
+            <input type="submit" class="botão" name="cancel" value="Cancelar"/>
+            </center>
         </form>
+            <%@include file="WEB-INF/jspf/footer.jspf"%>
     </body>
 </html>

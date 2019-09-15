@@ -26,12 +26,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
         <title>Incluir WebContatos</title>
     </head>
     <body>
-        <%@include file="/WEB-INF/home.jspf"%>
-        <h1>WebContatos</h1>
-        <h2>Novo Contato</h2>
+        <%@include file="WEB-INF/jspf/menu.jspf"%>
+        <center>
+        <h2>Adicionar</h2>
         <form>
             Musica:<br/>
             <input type="text" name="musica"/><br>
@@ -40,8 +41,10 @@
             Disco:<br/>
             <input type="text" name="disco"/><br></br>
             
-            <input type="submit" name="add" value="Adicionar"/>
-            <input type="submit" name="cancel" value="Cancelar"/>
+            <input type="submit" class="botão" name="add" value="Adicionar"/>
+            <input type="submit" class="botão" name="cancel" value="Cancelar"/>
         </form>
+        </center>
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
