@@ -109,7 +109,7 @@ table{
     border: 1px solid #000000;
     border-spacing: 0px;
     border-collapse: collapse;
-    
+    width: 70%;
 }
 
 th{

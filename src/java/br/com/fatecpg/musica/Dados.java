@@ -1,11 +1,13 @@
 
 package br.com.fatecpg.musica;
 
+//Set e Get
 public class Dados {
     private String musica;
     private String banda;
     private String disco;
-
+    
+    //Declaração
     public Dados(String musica, String banda, String disco) {
         this.musica = musica;
         this.banda = banda;

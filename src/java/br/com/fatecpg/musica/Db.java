@@ -4,15 +4,13 @@ import java.util.ArrayList;
 
 
 public class Db {
-    //contatos é o nome do arrayList
-    //getContatos() é um metodo
+    //Array List
     private static ArrayList<Dados> dados;
     public static ArrayList<Dados> getDados(){
             if(dados == null){
                 dados = new ArrayList<>();
-                dados.add(new Dados("musica1", "banda1", "disco1"));
-                dados.add(new Dados("musica2", "banda2", "disco2"));
-                dados.add(new Dados("musica3", "banda3", "disco3"));
+                dados.add(new Dados("Emperor's New Clothes", "Panic At The Disco", "Death Of a Bachelor"));
+                dados.add(new Dados("Bohemian Rhapsody", "Queen", "A Night At The Opera"));
             }
             return dados;
     }

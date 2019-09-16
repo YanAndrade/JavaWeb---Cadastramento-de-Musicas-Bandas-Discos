@@ -34,6 +34,7 @@
         <center>
         <h2>Excluir</h2>
         <form>
+            Realmente deseja excluir o <br/>
             Indice<br/><b><%= request.getParameter("index") %></b><br/>
             <input type="hidden" name="index" value="<%= request.getParameter("index") %>"/> <br/>
             <input type="submit" class="botão" name="remove" value="Excluir"/>
